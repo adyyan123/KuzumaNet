@@ -9,6 +9,7 @@ This botnet works through a server and client file, but as I said, this is just 
 
 Any suggestion can be made to me by discord zSodex#3828
 
+Kuzuma:KuzumaBySodex
 
 # Commands
 
