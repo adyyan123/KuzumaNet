@@ -128,9 +128,9 @@ def clientes(client_addr):
 
 def salida():
     print("[+] Bots in listening again, thanks for using Kuzuma :D  ")
-    print("[*] Press CTRL-C ")
+    print("[*] Press CTRL-C to close the program!")
             
-    sys.exit()   
+        
 
 
 def attack():
