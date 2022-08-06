@@ -1,4 +1,5 @@
-import sys 
+import sys
+from sys import platform
 import os
 import socket
 import subprocess
@@ -8,8 +9,15 @@ import colorama
 from colorama import Style, Fore 
 import threading as thread
 import _thread
-os.system("clear")
 
+
+osystem = sys.platform
+
+if osystem == "linux":
+    os.system("clear")
+
+else:
+    os.system("cls")
  
  
 welcome ="""
@@ -37,7 +45,11 @@ else:
     pass
 
 time.sleep(1.7)
-os.system("clear")
+if osystem == "linux":
+    os.system("clear")
+
+else:
+    os.system("cls")
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("""
