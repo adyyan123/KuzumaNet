@@ -30,7 +30,7 @@ if username != "Kuzuma" and passw != "KuzumaBySodex":
     time.sleep(1)
     print(Fore.RED+"[-] Access Denied")
     sys.exit()
-    exit()
+     
 else:
     time.sleep(1)
     print(Fore.LIGHTGREEN_EX+"[+] Login Accepted")
